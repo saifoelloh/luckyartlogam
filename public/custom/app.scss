@@ -1,0 +1,16 @@
+nav{
+  .navbar-brand{
+    img{
+      height: 40px;
+    }
+  }
+  .collapse{
+    .navbar-nav{
+      li a, button{
+        text-transform: uppercase;
+        font-weight: 600;
+        margin-right: 25px;
+      }
+    }
+  }
+}

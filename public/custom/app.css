@@ -1,0 +1,10 @@
+nav .navbar-brand img {
+  height: 40px;
+}
+
+nav .collapse .navbar-nav li a, nav .collapse .navbar-nav button {
+  text-transform: uppercase;
+  font-weight: 600;
+  margin-right: 25px;
+}
+/*# sourceMappingURL=app.css.map */
