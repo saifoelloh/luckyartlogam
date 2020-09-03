@@ -1,3 +1,6 @@
+body{
+  overflow-x: hidden;
+}
 nav{
   .navbar-brand{
     img{
@@ -8,9 +11,24 @@ nav{
     .navbar-nav{
       li a, button{
         text-transform: uppercase;
-        font-weight: 600;
+        font-weight: 700;
         margin-right: 25px;
       }
+    }
+  }
+}
+
+main{
+  .jumbotron{
+    height: 90vh;
+    background-image: url("/assets/hero.jpg");
+    background-size: cover;
+
+  }
+  section.benefit-section{
+    img{
+      width: 125px;
+      height: 125px;
     }
   }
 }
