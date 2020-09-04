@@ -1,0 +1,70 @@
+body {
+  overflow-x: hidden;
+}
+
+nav .navbar-brand img {
+  height: 40px;
+}
+
+nav .collapse .navbar-nav li a, nav .collapse .navbar-nav button {
+  text-transform: uppercase;
+  font-weight: 700;
+  margin-right: 25px;
+}
+
+main .jumbotron {
+  height: 90vh;
+  background-image: url("/assets/hero.jpg");
+  background-size: cover;
+}
+
+main section.benefit-section img {
+  width: 125px;
+  height: 125px;
+}
+
+main section.benefit-section .card-body {
+  padding: 0 80px;
+}
+
+main section.benefit-section .card-body h5 {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+main section.benefit-section .card-body p {
+  font-size: 15px;
+}
+
+main section.product-section .card {
+  width: 300px;
+  height: 400px;
+}
+
+main section.product-section .card img {
+  height: 180px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+}
+
+main section.product-section .card .card-body h6.card-title {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+main section.product-section .card .card-body p.product-category {
+  color: gray;
+}
+
+main section.product-section .card a {
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}
+
+main section.testimonial-section img.testimonial-photo {
+  width: 300px;
+  height: 500px;
+}
+/*# sourceMappingURL=app.css.map */
