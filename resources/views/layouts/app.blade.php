@@ -22,6 +22,8 @@
 
 		<!-- Custom Style -->
 		<link rel="stylesheet" href="{{ asset('custom/app.css') }}">
+
+		@stack('link')
 </head>
 
 <body>

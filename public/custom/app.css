@@ -63,8 +63,7 @@ main section.product-section .card a {
   border-top-right-radius: 0;
 }
 
-main section.testimonial-section img.testimonial-photo {
-  width: 300px;
-  height: 500px;
+main section.testimonial-section .testimonial-image #carouselTestimonial {
+  width: 275px;
 }
 /*# sourceMappingURL=app.css.map */

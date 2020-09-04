@@ -85,18 +85,113 @@
   </section>
 
   <!-- Testimonial -->
+  @php
+    $testimonials = [
+      [
+        'image'        => asset('assets/testimoni/testi-01.jpg'),
+      ],
+      [
+        'image'        => asset('assets/testimoni/testi-02.jpg'),
+      ],
+      [
+        'image'        => asset('assets/testimoni/testi-03.jpg'),
+      ],
+      [
+        'image'        => asset('assets/testimoni/testi-04.jpg'),
+      ],
+      [
+        'image'        => asset('assets/testimoni/testi-05.jpg'),
+      ],
+      [
+        'image'        => asset('assets/testimoni/testi-06.jpg'),
+      ],
+      [
+        'image'        => asset('assets/testimoni/testi-07.jpg'),
+      ],
+      [
+        'image'        => asset('assets/testimoni/testi-08.jpg'),
+      ],
+      [
+        'image'        => asset('assets/testimoni/testi-09.jpg'),
+      ],
+      [
+        'image'        => asset('assets/testimoni/testi-10.jpg'),
+      ],
+      [
+        'image'        => asset('assets/testimoni/testi-11.jpg'),
+      ],
+      [
+        'image'        => asset('assets/testimoni/testi-12.jpg'),
+      ],
+      [
+        'image'        => asset('assets/testimoni/testi-13.jpg'),
+      ],
+      
+    ];
+  @endphp
   <section class="testimonial-section my-5">
     <div class="container">
       <div class="row">
-        <div class="col-lg-5">
-          <img src="{{ asset('assets/dummy-product.jpg') }}" alt="" class="testimonial-photo mx-auto">
+        <div class="testimonial-image col-lg-5">
+        <!-- <div class="owl-carousel">
+          <div class="">
+            <img src="{{ asset('assets/testimoni/testi-01.jpg') }}" class="testimonial-photo" alt="">  
+          </div>
+          <div class="">
+            <img src="{{ asset('assets/testimoni/testi-02.jpg') }}" class="testimonial-photo" alt="">  
+          </div>
+        </div> -->
+          <div id="carouselTestimonial" class="carousel slide" data-ride="carousel">
+            <div class="carousel-inner">
+              
+              @foreach($testimonials as $testi)
+                @if($testi['image'] == $testimonials[0]['image'])
+                  <div class="carousel-item active" data-interval="7000">
+                    <img src="{{ asset('assets/testimoni/testi-01.jpg') }}" class="d-block w-100 " alt="...">
+                  </div>
+                @else
+                  <div class="carousel-item" data-interval="3000">
+                    <img src="{{ $testi['image'] }}" class="d-block w-100 " alt="...">
+                  </div>
+                @endif
+              @endforeach
+              
+              <!-- 
+              <div class="carousel-item">
+                <img src="{{ asset('assets/testimoni/testi-03.jpg') }}" class="d-block w-100" alt="...">
+              </div> -->
+            </div>
+            <a class="carousel-control-prev" href="#carouselTestimonial" role="button" data-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselTestimonial" role="button" data-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="sr-only">Next</span>
+            </a>
+          </div>
         </div>
         <div class="col-lg"></div>
         <div class="col-lg-6 px-5">
           <h1 class="title-section">Testimonial</h1>
+          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Optio odit labore vel ullam laborum eos aspernatur cumque? Exercitationem eaque porro, sit facere id, quos voluptates possimus nulla ut quaerat assumenda odit voluptatum soluta saepe commodi eveniet. Magnam doloremque temporibus dolore provident repellendus eius atque. Quas quasi atque, molestias, odio in suscipit consequatur quam quod sit ipsa commodi corrupti? Rem, delectus!</p>
         </div>
       </div>
     </div>
   </section>
 
 @endsection
+
+@push('link')
+  <link rel="stylesheet" href="owlcarousel/owl.carousel.min.css">
+  <link rel="stylesheet" href="owlcarousel/owl.theme.default.min.css">
+@endpush
+
+@push('js')
+  <script src="owlcarousel/owl.carousel.min.js"></script>
+  <script>
+    $(document).ready(function(){
+      $(".owl-carousel").owlCarousel();
+    }); 
+  </script>
+@endpush

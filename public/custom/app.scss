@@ -68,9 +68,12 @@ main{
     }
   }
   section.testimonial-section{
-    img.testimonial-photo{
-      width: 300px;
-      height: 500px;
+    .testimonial-image{
+      // width: 350px;
+      #carouselTestimonial{
+        width: 275px;
+        // height: 400px;
+      }
     }
   }
 }
