@@ -59,21 +59,27 @@
             searchable: false,
             sortable: false,
             render: function(data) {
+              const photos = `
+                <a class="btn btn-success btn-sm" href="/dashboard/photos/${data}">
+                  <i class="fas fa-plus"></i>
+                  foto
+                </a>`
               const detail = `
-                <a class="btn btn-warning btn-xs btn-icon" href="{{ route("product.index") }}/${data}/edit">
-                  <i class="fas fa-edit fa-lg"></i>
+                <a class="btn btn-warning btn-sm" href="{{ route("product.index") }}/${data}/edit">
+                  <i class="fas fa-edit"></i>
                   edit
                 </a>`
               const destroy = `<form action="{{ route("product.index") }}/${data}" method="POST" class="d-inline">
                 @method("DELETE")
                 @csrf
-                <button class="btn btn-danger btn-xs btn-icon" type="submit">
-                  <i class="fas fa-trash fa-lg"></i>
+                <button class="btn btn-danger btn-sm" type="submit">
+                  <i class="fas fa-trash"></i>
                   delete
                 </button>
               </form>`
               const buttons = `
                 <div class="d-inline">
+                  ${photos}
                   ${detail}
                   ${destroy}
                 </div>

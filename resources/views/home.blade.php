@@ -67,12 +67,12 @@
               <div class="card-body">
                 <h6 class="card-title font-weight-bold mb-0 text-capitalize">{{ $item['name'] }}</h6>
                 <p class="product-category">
-                  {{ "Rp. ".number_format($item['category']) }}
+                  {{ $item['category'] }}
                 </p>
                 <p class="card-text">{{ $item['description'] }}</p>
               </div>
               <div class="card-footer bg-white border-0 p-0">
-                <a href="" class="btn btn-info btn-block text-white">Readmore</a>
+                <a href="{{route('product.detail', $item['id'])}}" class="btn btn-info btn-block text-white">Readmore</a>
               </div>
             </div>
           </div>

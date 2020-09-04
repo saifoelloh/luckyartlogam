@@ -16,10 +16,14 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', 'HomeController@index');
 
 Auth::routes();
+Route::get('/product/{id}', 'ProductController@show')->name('product.detail');
 Route::group([
     'middleware'  => 'auth',
     'prefix'      => 'dashboard'
 ], function() {
     Route::resource('admin', 'AdminController');
     Route::resource('product', 'ProductController');
+    Route::get('/photos/{id}', 'PhotoProductController@create')->name('photos.create');
+    Route::post('/photos/{id}', 'PhotoProductController@store')->name('photos.store');
+    Route::delete('/photos/{id}', 'PhotoProductController@destroy')->name('photos.destroy');
 });
