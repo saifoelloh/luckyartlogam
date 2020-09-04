@@ -133,17 +133,8 @@
     <div class="container">
       <div class="row">
         <div class="testimonial-image col-lg-5">
-        <!-- <div class="owl-carousel">
-          <div class="">
-            <img src="{{ asset('assets/testimoni/testi-01.jpg') }}" class="testimonial-photo" alt="">  
-          </div>
-          <div class="">
-            <img src="{{ asset('assets/testimoni/testi-02.jpg') }}" class="testimonial-photo" alt="">  
-          </div>
-        </div> -->
           <div id="carouselTestimonial" class="carousel slide" data-ride="carousel">
             <div class="carousel-inner">
-              
               @foreach($testimonials as $testi)
                 @if($testi['image'] == $testimonials[0]['image'])
                   <div class="carousel-item active" data-interval="7000">
@@ -155,11 +146,6 @@
                   </div>
                 @endif
               @endforeach
-              
-              <!-- 
-              <div class="carousel-item">
-                <img src="{{ asset('assets/testimoni/testi-03.jpg') }}" class="d-block w-100" alt="...">
-              </div> -->
             </div>
             <a class="carousel-control-prev" href="#carouselTestimonial" role="button" data-slide="prev">
               <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -182,16 +168,3 @@
 
 @endsection
 
-@push('link')
-  <link rel="stylesheet" href="owlcarousel/owl.carousel.min.css">
-  <link rel="stylesheet" href="owlcarousel/owl.theme.default.min.css">
-@endpush
-
-@push('js')
-  <script src="owlcarousel/owl.carousel.min.js"></script>
-  <script>
-    $(document).ready(function(){
-      $(".owl-carousel").owlCarousel();
-    }); 
-  </script>
-@endpush
