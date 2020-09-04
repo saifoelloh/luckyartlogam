@@ -26,12 +26,12 @@
 
 <body>
     <div id="app">
-        <nav class="navbar navbar-expand-md navbar-light bg-white shadow-sm">
+        <nav class="navbar navbar-expand-md navbar-light bg-white shadow sticky-top">
             <div class="container">
 								<a class="navbar-brand" href="{{ url('/') }}">
 								  <div class="d-flex align-items-center">
 										<img src="{{ asset('assets/logo-luckyart.png')}}" alt="">
-										<h4 class="ml-2 d-inline-block font-weight-bold">Lucky Art Tembaga</h4>
+										<h4 class="ml-2 mb-0 font-weight-bolder">Lucky Art Tembaga</h4>
 									</div>
                 </a>
                <button class="navbar-toggler" type="button" data-toggle="collapse"

@@ -4,9 +4,9 @@
 
   <div class="jumbotron jumbotron-fluid">
     <div class="container h-100 d-flex align-items-center">
-      <div class="bg-white p-5">
+      <div class="bg-white p-md-5">
         <h1 class="display-4 mb-0">LuckyArtLogam</h1>
-        <p class="lead">This is a modified jumbotron that occupies the entire horizontal space of its parent.</p>
+        <p class="lead text-break">This is a modified jumbotron that occupies the entire horizontal space of its parent.</p>
       </div>
     </div>
   </div>
