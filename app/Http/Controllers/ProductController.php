@@ -78,7 +78,12 @@ class ProductController extends Controller
      */
     public function show($id)
     {
-        //
+        $product = Product::findOrFail($id);
+
+        return view('pages.dashboard.product.show', [
+            'product' => $product,
+            'photos' => $product->photos,
+        ]);
     }
 
     /**

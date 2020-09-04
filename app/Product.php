@@ -12,4 +12,8 @@ class Product extends Model
         'description',
         'photo'
     ];
+
+    public function photos() {
+      return $this->hasMany(PhotoProduct::class);
+    }
 }
