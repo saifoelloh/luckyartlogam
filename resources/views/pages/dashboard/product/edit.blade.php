@@ -28,8 +28,8 @@
                 <input class="form-control" type="text" name="name" id="name" value="{{$product['name']}}" required>
               </div>
               <div class="form-group">
-                <label for="price">Harga</label>
-                <input class="form-control" type="number" name="price" id="price" value="{{$product['price']}}" required>
+                <label for="category">Kategori</label>
+                <input class="form-control" type="text" name="category" id="category" value="{{$product['category']}}" required>
               </div>
               <div class="form-group">
                 <label for="photo">Foto</label>

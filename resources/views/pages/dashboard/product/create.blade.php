@@ -27,8 +27,8 @@
                 <input class="form-control" type="text" name="name" id="name" required>
               </div>
               <div class="form-group">
-                <label for="price">Harga</label>
-                <input class="form-control" type="number" name="price" id="price" required>
+                <label for="category">Kategori</label>
+                <input class="form-control" type="text" name="category" id="category" required>
               </div>
               <div class="form-group">
                 <label for="photo">Foto</label>

@@ -49,7 +49,7 @@ class ProductController extends Controller
         try {
             Product::create([
                 'name' => $request->name,
-                'price' => $request->price,
+                'category' => $request->category,
                 'description' => $request->description,
                 'photo' => $photo,
             ]);
@@ -118,7 +118,7 @@ class ProductController extends Controller
         try {
             $product->update([
                 'name' => $request->name,
-                'price' => $request->price,
+                'category' => $request->category,
                 'description' => $request->description,
                 'photo' => $photo,
             ]);

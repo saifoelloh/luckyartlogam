@@ -67,7 +67,7 @@
               <div class="card-body">
                 <h6 class="card-title font-weight-bold mb-0 text-capitalize">{{ $item['name'] }}</h6>
                 <p class="product-category">
-                  {{ "Rp. ".number_format($item['price']) }}
+                  {{ "Rp. ".number_format($item['category']) }}
                 </p>
                 <p class="card-text">{{ $item['description'] }}</p>
               </div>

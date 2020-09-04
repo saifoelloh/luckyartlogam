@@ -31,7 +31,7 @@
             <tr>
               <th>nomor</th>
               <th>nama</th>
-              <th>harga</th>
+              <th>kategori</th>
               <th>deskripsi</th>
               <th>aksi</th>
             </tr>
@@ -51,16 +51,7 @@
         columns: [
           {data: 'DT_RowIndex', name: 'DT_RowIndex'},
           {data: 'name', name: 'name'},
-          {
-            data: 'price',
-            name: 'price',
-            render: function(data) {
-              return new Intl.NumberFormat('id-ID', {
-                style: 'currency',
-                currency: 'IDR'
-              }).format(data)
-            }
-          },
+          { data: 'category', name: 'category' },
           {data: 'description', name: 'description'},
           {
             data: 'id',
