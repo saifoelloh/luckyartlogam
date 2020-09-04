@@ -30,5 +30,47 @@ main{
       width: 125px;
       height: 125px;
     }
+    .card-body{
+      padding: 0 80px;
+      
+      h5{
+        font-size: 24px;
+        font-weight: bold;
+      }
+      p{
+        font-size: 15px;
+      }
+    }
+  }
+
+  section.product-section{
+    .card{
+      width: 300px;
+      height: 400px;
+      img{
+        height: 180px;
+        object-fit: cover;
+        object-position: center;
+      }
+      .card-body{
+        h6.card-title{
+          font-size: 18px;
+          font-weight: bold;
+        }
+        p.product-category{
+          color: gray;
+        }
+      }
+      a{
+        border-top-left-radius: 0;
+        border-top-right-radius: 0;
+      }
+    }
+  }
+  section.testimonial-section{
+    img.testimonial-photo{
+      width: 300px;
+      height: 500px;
+    }
   }
 }

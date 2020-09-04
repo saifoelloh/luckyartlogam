@@ -8,12 +8,12 @@
     <p class="lead">This is a modified jumbotron that occupies the entire horizontal space of its parent.</p>
   </div>
 </div>
-<section class="benefit-section">
+<section class="benefit-section vh-100-lg my-5">
   <div class="container">
     <h1 class="title-section text-center">Benefits</h1>
     <div class="row">
       <div class="col-12 col-lg-6 my-3">
-        <div class="card border-0 bg-transparent px-5">
+        <div class="card border-0 bg-transparent">
           <img src="{{ asset('assets/icon-real-pict.png') }}" class="mx-auto" alt="...">
           <div class="card-body text-center">
             <h5 class="card-title">Real Pict</h5>
@@ -22,7 +22,7 @@
         </div>
       </div>
       <div class="col-12 col-lg-6 my-3">
-        <div class="card border-0 bg-transparent px-5">
+        <div class="card border-0 bg-transparent">
           <img src="{{ asset('assets/icon-tanpa-min.png') }}" class="mx-auto" alt="...">
           <div class="card-body text-center">
             <h5 class="card-title">Tanpa Minimum Transaksi</h5>
@@ -31,7 +31,7 @@
         </div>
       </div>
       <div class="col-12 col-lg-6 my-3">
-        <div class="card border-0 bg-transparent px-5">
+        <div class="card border-0 bg-transparent">
           <img src="{{ asset('assets/icon-custom-design.png') }}" class="mx-auto" alt="...">
           <div class="card-body text-center">
             <h5 class="card-title">Custom Design</h5>
@@ -40,7 +40,7 @@
         </div>
       </div>
       <div class="col-12 col-lg-6 my-3">
-        <div class="card border-0 bg-transparent px-5">
+        <div class="card border-0 bg-transparent">
           <img src="{{ asset('assets/icon-sdm-unggul.png') }}" class="mx-auto" alt="...">
           <div class="card-body text-center">
             <h5 class="card-title">Card title</h5>
@@ -51,6 +51,95 @@
     </div>
   </div>
   
+</section>
+<section class="product-section my-5">
+  <div class="container">
+    <h1 class="title-section text-center">Product</h1>
+    <div class="row">
+      <div class="col-12 col-md-6 col-lg-4 mb-5">
+        <div class="card mx-auto">
+          <img src="{{ asset('assets/dummy-product.jpg') }}" class="" alt="...">
+          <div class="card-body">
+            <h6 class="card-title font-weight-bold">Nama Barang</h6>
+            <p class="product-category">Kategory</p>
+            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio amet atque officia, omnis molestiae reiciendis ratione nesciunt, delectus tempora, dolor necessitatibus animi quam iste voluptate corporis maiores nostrum nam ipsum!</p>
+          </div>
+          <a href="" class="btn btn-info text-white">Readmore</a>
+        </div>
+      </div>
+      <div class="col-12 col-md-6 col-lg-4 mb-5">
+        <div class="card mx-auto">
+          <img src="{{ asset('assets/dummy-product.jpg') }}" class="" alt="...">
+          <div class="card-body">
+            <h6 class="card-title font-weight-bold">Nama Barang</h6>
+            <p class="product-category">Kategory</p>
+            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio amet atque officia, omnis molestiae reiciendis ratione nesciunt, delectus tempora, dolor necessitatibus animi quam iste voluptate corporis maiores nostrum nam ipsum!</p>
+          </div>
+          <a href="" class="btn btn-info text-white">Readmore</a>
+        </div>
+      </div>
+      <div class="col-12 col-md-6 col-lg-4 mb-5">
+        <div class="card mx-auto">
+          <img src="{{ asset('assets/dummy-product.jpg') }}" class="" alt="...">
+          <div class="card-body">
+            <h6 class="card-title font-weight-bold">Nama Barang</h6>
+            <p class="product-category">Kategory</p>
+            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio amet atque officia, omnis molestiae reiciendis ratione nesciunt, delectus tempora, dolor necessitatibus animi quam iste voluptate corporis maiores nostrum nam ipsum!</p>
+          </div>
+          <a href="" class="btn btn-info text-white">Readmore</a>
+        </div>
+      </div>
+      <div class="col-12 col-md-6 col-lg-4 mb-5">
+        <div class="card mx-auto">
+          <img src="{{ asset('assets/dummy-product.jpg') }}" class="" alt="...">
+          <div class="card-body">
+            <h6 class="card-title font-weight-bold">Nama Barang</h6>
+            <p class="product-category">Kategory</p>
+            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio amet atque officia, omnis molestiae reiciendis ratione nesciunt, delectus tempora, dolor necessitatibus animi quam iste voluptate corporis maiores nostrum nam ipsum!</p>
+          </div>
+          <a href="" class="btn btn-info text-white">Readmore</a>
+        </div>
+      </div>
+      <div class="col-12 col-md-6 col-lg-4 mb-5">
+        <div class="card mx-auto">
+          <img src="{{ asset('assets/dummy-product.jpg') }}" class="" alt="...">
+          <div class="card-body">
+            <h6 class="card-title font-weight-bold">Nama Barang</h6>
+            <p class="product-category">Kategory</p>
+            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio amet atque officia, omnis molestiae reiciendis ratione nesciunt, delectus tempora, dolor necessitatibus animi quam iste voluptate corporis maiores nostrum nam ipsum!</p>
+          </div>
+          <a href="" class="btn btn-info text-white">Readmore</a>
+        </div>
+      </div>
+      <div class="col-12 col-md-6 col-lg-4 mb-5">
+        <div class="card mx-auto">
+          <img src="{{ asset('assets/dummy-product.jpg') }}" class="" alt="...">
+          <div class="card-body">
+            <h6 class="card-title font-weight-bold">Nama Barang</h6>
+            <p class="product-category">Kategory</p>
+            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio amet atque officia, omnis molestiae reiciendis ratione nesciunt, delectus tempora, dolor necessitatibus animi quam iste voluptate corporis maiores nostrum nam ipsum!</p>
+          </div>
+          <a href="" class="btn btn-info text-white">Readmore</a>
+        </div>
+      </div>
+    </div>
+      <div class="d-flex justify-content-center">
+        <a href="" class="btn btn-outline-primary font-weight-bold px-5">See More</a> 
+      </div>
+  </div>
+</section>
+<section class="testimonial-section">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-5">
+        <img src="{{ asset('assets/dummy-product.jpg') }}" alt="" class="testimonial-photo mx-auto">
+      </div>
+      <div class="col-lg"></div>
+      <div class="col-lg-6 px-5">
+        <h1 class="title-section">Testimonial</h1>
+      </div>
+    </div>
+  </div>
 </section>
   
 
