@@ -14,8 +14,11 @@ nav .collapse .navbar-nav li a, nav .collapse .navbar-nav button {
 
 main .jumbotron {
   height: 90vh;
-  background-image: url("/assets/hero.jpg");
-  background-size: cover;
+  background-color: #0097e6;
+}
+
+main .jumbotron img {
+  width: 400px;
 }
 
 main section.benefit-section img {
@@ -65,5 +68,25 @@ main section.product-section .card a {
 
 main section.testimonial-section .testimonial-image #carouselTestimonial {
   width: 275px;
+}
+
+footer {
+  background-color: #2f3640;
+  color: #fff;
+  padding: 50px 0;
+}
+
+footer .items a.item {
+  text-decoration: none;
+  cursor: pointer;
+  color: #fff;
+}
+
+footer .items a.item:hover {
+  color: #0097e6;
+}
+
+footer .items.bank-number img {
+  height: 30px;
 }
 /*# sourceMappingURL=app.css.map */

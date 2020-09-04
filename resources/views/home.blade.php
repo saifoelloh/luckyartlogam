@@ -3,10 +3,13 @@
 @section('content')
 
   <div class="jumbotron jumbotron-fluid">
-    <div class="container h-100 d-flex align-items-center">
-      <div class="bg-white p-md-5">
-        <h1 class="display-4 mb-0">LuckyArtLogam</h1>
-        <p class="lead text-break">This is a modified jumbotron that occupies the entire horizontal space of its parent.</p>
+    <div class="container h-100 d-flex align-items-center justify-content-between">
+      <div class=" pr-md-5 text-white">
+        <h1 class="display-4 mb-3">Lucky Art Logam</h1>
+        <p class="lead text-break">Pusat kerajinan Tembaga Berkualitas Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquid quas consectetur non maiores nobis laboriosam deleniti error iusto temporibus hic.</p>
+      </div>
+      <div class="d-none d-lg-block">
+        <img src="{{ asset('assets/image.png') }}" alt=""> 
       </div>
     </div>
   </div>
@@ -56,7 +59,7 @@
   </section>
 
   <!-- Product -->
-  <section class="product-section my-5">
+  <section id="productSection" class="product-section my-5">
     <div class="container">
       <h1 class="title-section text-center">Product</h1>
       <div class="row">
@@ -132,8 +135,12 @@
   <section class="testimonial-section my-5">
     <div class="container">
       <div class="row">
-        <div class="testimonial-image col-lg-5">
-          <div id="carouselTestimonial" class="carousel slide" data-ride="carousel">
+        <div class="col-12 px-5 d-block d-lg-none">
+          <h1 class="title-section">Testimonial</h1>
+          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Optio odit labore vel ullam laborum eos aspernatur cumque? Exercitationem eaque porro, sit facere id, quos voluptates possimus nulla ut quaerat assumenda odit voluptatum soluta saepe commodi eveniet. Magnam doloremque temporibus dolore provident repellendus eius atque. Quas quasi atque, molestias, odio in suscipit consequatur quam quod sit ipsa commodi corrupti? Rem, delectus!</p>
+        </div>
+        <div class="testimonial-image col-lg-5 col-12">
+          <div id="carouselTestimonial" class="carousel slide mx-auto" data-ride="carousel">
             <div class="carousel-inner">
               @foreach($testimonials as $testi)
                 @if($testi['image'] == $testimonials[0]['image'])
@@ -157,14 +164,14 @@
             </a>
           </div>
         </div>
-        <div class="col-lg"></div>
-        <div class="col-lg-6 px-5">
+        <div class="col-lg-6 col-12 px-5 d-none d-lg-block">
           <h1 class="title-section">Testimonial</h1>
           <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Optio odit labore vel ullam laborum eos aspernatur cumque? Exercitationem eaque porro, sit facere id, quos voluptates possimus nulla ut quaerat assumenda odit voluptatum soluta saepe commodi eveniet. Magnam doloremque temporibus dolore provident repellendus eius atque. Quas quasi atque, molestias, odio in suscipit consequatur quam quod sit ipsa commodi corrupti? Rem, delectus!</p>
         </div>
       </div>
     </div>
   </section>
+
 
 @endsection
 
