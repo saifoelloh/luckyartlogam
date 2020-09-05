@@ -8,8 +8,8 @@
         <h1 class=" font-weight-bold display-4 mb-3">Lucky Art Tembaga</h1>
         <p class="pr-5 lead text-break">Pusat kerajinan tembaga berkualitas Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquid quas consectetur non maiores nobis laboriosam deleniti error iusto temporibus hic.</p>
       </div>
-      <div class="d-none d-lg-block">
-        <img src="{{ asset('assets/image.png') }}" alt=""> 
+      <div class="d-none d-md-block">
+        <img class="w-100" src="{{ asset('assets/image.png') }}" alt=""> 
       </div>
     </div>
   </div>
