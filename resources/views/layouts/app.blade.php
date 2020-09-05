@@ -8,7 +8,7 @@
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
-    <title>{{ config('app.name', 'Laravel') }}</title>
+    <title>{{ config('app.name', 'Lucky Art Tembaga') }}</title>
 
     <!-- Scripts -->
     <script src="{{ asset('js/app.js') }}" defer></script>
@@ -116,13 +116,13 @@
 							<div class="bank-number items">
 								<p class="mt-3 font-weight-bold">An. Edi Kurniawan</p>
 								<div class="item d-flex align-items-center my-3 row">
-									<div class="col-4">
+									<div class="col-3 col-md-2 col-lg-4">
 										<img  src="{{ asset('assets/logo-bca.png') }}" alt="">
 									</div>
 									<p class="mb-0">1430-3267-39</p>
 								</div>
 								<div class="item d-flex align-items-center my-3 row">
-									<div class="col-4">
+									<div class="col-3 col-md-2 col-lg-4">
 										<img src="{{ asset('assets/logo-bri.png') }}" alt="">
 									</div>
 									<p class="mb-0">6659-0102-1338-530</p>
