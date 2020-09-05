@@ -1,5 +1,6 @@
 body{
   overflow-x: hidden;
+  color: #1e272e;
 }
 nav{
   .navbar-brand{
@@ -9,7 +10,7 @@ nav{
   }
   .collapse{
     .navbar-nav{
-      li a, button{
+      li a, a{
         text-transform: uppercase;
         font-weight: 700;
         margin-right: 25px;
@@ -21,8 +22,22 @@ nav{
 main{
   .jumbotron{
     height: 90vh;
-    background-image: url("/assets/hero.jpg");
-    background-size: cover;
+    // background-image: url("/assets/hero.jpg");
+    // background-size: cover;
+    background-color: #0097e6;
+    img{
+      width: 400px;
+    }
+    a.product-cta{
+      background-color:#fff;
+      color: #227DC7;
+      // outline: 2px solid #fff;
+      &:hover{
+        background-color:#227DC7;
+        color: #fff;
+        outline: 2px solid #fff;
+      }
+    }
 
   }
   section.benefit-section{
@@ -38,7 +53,8 @@ main{
         font-weight: bold;
       }
       p{
-        font-size: 15px;
+        font-size: 14px;
+        color: #485460;
       }
     }
   }
@@ -68,9 +84,69 @@ main{
     }
   }
   section.testimonial-section{
-    img.testimonial-photo{
-      width: 300px;
-      height: 500px;
+    .desk{
+      p{
+        color: #485460;
+        font-size: 14px;
+      }
+    }
+    .testimonial-image{
+      #carouselTestimonial{
+        width: 275px;
+      }
+    }
+  }
+}
+
+footer{
+  background-color: #2f3640;
+  color: #fff;
+  padding: 50px 0;
+  
+  .items{
+    a.item{
+      text-decoration: none;
+      cursor: pointer;
+      color: #fff;
+      &:hover{
+        color: #0097e6;
+      }
+    }
+  }
+  .items.bank-number{
+    img{
+      height: 30px;
+    }
+  }
+}
+section.detail-product-section{
+  #carouselExampleControls{
+    width: 300px;
+    height: 400px;
+    overflow: hidden;
+
+    .carousel-control-prev-icon,
+    .carousel-control-next-icon {
+      height: 100px;
+      width: 100px;
+      background-image: none;
+    }
+
+    .carousel-control-next-icon:after
+    {
+      content: '>';
+      background-color: #fff;
+      padding: 0 4px;
+      font-size: 55px;
+      color: red;
+    }
+
+    .carousel-control-prev-icon:after {
+      content: '<';
+      background-color: #fff;
+      padding: 0 4px;
+      font-size: 55px;
+      color: red;
     }
   }
 }

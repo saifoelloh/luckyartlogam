@@ -1,12 +1,13 @@
 body {
   overflow-x: hidden;
+  color: #1e272e;
 }
 
 nav .navbar-brand img {
   height: 40px;
 }
 
-nav .collapse .navbar-nav li a, nav .collapse .navbar-nav button {
+nav .collapse .navbar-nav li a, nav .collapse .navbar-nav a {
   text-transform: uppercase;
   font-weight: 700;
   margin-right: 25px;
@@ -14,8 +15,22 @@ nav .collapse .navbar-nav li a, nav .collapse .navbar-nav button {
 
 main .jumbotron {
   height: 90vh;
-  background-image: url("/assets/hero.jpg");
-  background-size: cover;
+  background-color: #0097e6;
+}
+
+main .jumbotron img {
+  width: 400px;
+}
+
+main .jumbotron a.product-cta {
+  background-color: #fff;
+  color: #227DC7;
+}
+
+main .jumbotron a.product-cta:hover {
+  background-color: #227DC7;
+  color: #fff;
+  outline: 2px solid #fff;
 }
 
 main section.benefit-section img {
@@ -33,7 +48,8 @@ main section.benefit-section .card-body h5 {
 }
 
 main section.benefit-section .card-body p {
-  font-size: 15px;
+  font-size: 14px;
+  color: #485460;
 }
 
 main section.product-section .card {
@@ -63,8 +79,75 @@ main section.product-section .card a {
   border-top-right-radius: 0;
 }
 
-main section.testimonial-section img.testimonial-photo {
+main section.testimonial-section .desk p {
+  color: #485460;
+  font-size: 14px;
+}
+
+main section.testimonial-section .testimonial-image #carouselTestimonial {
+  width: 275px;
+}
+
+footer {
+  background-color: #2f3640;
+  color: #fff;
+  padding: 50px 0;
+}
+
+footer .items a.item {
+  text-decoration: none;
+  cursor: pointer;
+  color: #fff;
+}
+
+footer .items a.item:hover {
+  color: #0097e6;
+}
+
+footer .items.bank-number img {
+  height: 30px;
+}
+
+section.detail-product-section #carouselExampleControls {
   width: 300px;
-  height: 500px;
+  height: 400px;
+  overflow: hidden;
+}
+
+section.detail-product-section #carouselExampleControls .carousel-control-prev-icon,
+section.detail-product-section #carouselExampleControls .carousel-control-next-icon {
+  height: 100px;
+  width: 100px;
+  background-image: none;
+}
+
+section.detail-product-section #carouselExampleControls .carousel-control-next-icon:after {
+  content: '>';
+  background-color: #fff;
+  padding: 0 4px;
+  font-size: 55px;
+  color: red;
+}
+
+section.detail-product-section #carouselExampleControls .carousel-control-prev-icon:after {
+  content: '<';
+  background-color: #fff;
+  padding: 0 4px;
+  font-size: 55px;
+  color: red;
+}
+
+.wa-me {
+  bottom: 0;
+  right: 0;
+}
+
+.wa-me img {
+  width: 70px;
+  height: 70px;
+}
+
+.wa-me:hover {
+  opacity: 75%;
 }
 /*# sourceMappingURL=app.css.map */

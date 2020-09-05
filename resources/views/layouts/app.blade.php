@@ -8,7 +8,7 @@
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
-    <title>{{ config('app.name', 'Laravel') }}</title>
+    <title>{{ config('app.name', 'Lucky Art Tembaga') }}</title>
 
     <!-- Scripts -->
     <script src="{{ asset('js/app.js') }}" defer></script>
@@ -22,6 +22,10 @@
 
 		<!-- Custom Style -->
 		<link rel="stylesheet" href="{{ asset('custom/app.css') }}">
+
+		@stack('link')
+
+		<!-- Fontawesome -->
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
 </head>
 
@@ -45,15 +49,15 @@
                     <!-- Left Side Of Navbar -->
                     <ul class="navbar-nav ml-auto">
 											<li class="nav-item active">
-												<a class="nav-link" href="#">Home </a>
+												<a class="nav-link" href="{{ url('/') }}">Home </a>
 											</li>
 											<li class="nav-item">
-												<a class="nav-link" href="#">Product</a>
+												<a class="nav-link" href="{{ url('/') }}#productSection">Product</a>
 											</li>
 											<li class="nav-item">
-												<a class="nav-link" href="#">About</a>
+												<a class="nav-link" href="{{ url('/') }}#testimonialSection">Testimonial</a>
 											</li>
-											<button class="btn btn-primary">Contact Us</button>
+											<a href="#footerInfo" class="btn btn-primary">Contact Us</a>
                     </ul>
 
                     
@@ -63,7 +67,71 @@
 
         <main class="">
             @yield('content')
-        </main>
+				</main>
+
+			<footer id="footerInfo">
+				<div class="container">
+					<div class="row">
+						<div class="col-12 col-md-6 col-lg-4">
+							<h4 class="title bold">Hubungi Kami</h4>
+							<div class="items">
+								<a class="item d-flex align-items-center mt-3" href="tel:6281338391846">
+									<i class="mr-4 fas fa-mobile-alt fa-2x"></i>
+									<p class="mb-0">+62 813-3839-1846</p>
+								</a>
+								<a class="item d-flex align-items-center my-3" href="https://wa.me/6281338391846">
+									<i class="mr-3 fab fa-whatsapp fa-2x"></i>
+									<p class="mb-0">+62 813-3839-1846</p>
+								</a>
+								<a class="item d-flex align-items-center my-3">
+									<i class="mr-3 fas fa-envelope fa-2x"></i>
+									<p class="mb-0">luckyart91@gmail.com</p>
+								</a>
+								<a class="item d-flex align-items-center mb-3" href="https://www.google.com/maps/place/Lucky+Art+Tembaga/@-7.4871249,110.5312559,21z/data=!4m5!3m4!1s0x0:0xc6c51cb89e2c7bfd!8m2!3d-7.4879626!4d110.5310024">
+									<i class="mr-4 fas fa-map-marker-alt fa-2x"></i>
+									<p class="mb-0">Dukuh Ringgit RT03 / RW 03, Kembangkuning, Cepogo, Kabupaten Boyolali, Jawa Tengah 57362</p>
+								</a>
+							</div>
+									
+						</div>
+						<div class="col-12 col-md-6 col-lg-4 my-5 my-lg-0">
+							<h4 class="title bold">Social Media</h4>
+							<div class="items">
+								<a class="item d-flex align-items-center mt-3" href="https://www.instagram.com/lucky_art_tembaga/">
+									<i class="mr-4 fab fa-instagram fa-2x"></i>
+									<p class="mb-0">lucky_art_tembaga</p>
+								</a>
+								<a class="item d-flex align-items-center my-3" href="https://www.facebook.com/lucky.artcopper">
+									<i class="mr-4 fab fa-facebook fa-2x"></i>
+									<p class="mb-0">Lucky Art Tembaga</p>
+								</a>
+								<a class="item d-flex align-items-center mb-3">
+									<i class="mr-4 fab fa-linkedin fa-2x"></i>
+									<p class="mb-0">edi-kurniawan</p>
+								</a>
+							</div>
+						</div>
+						<div class="col-12 col-md-12 col-lg-4">
+							<h4 class="title font-weight-bold">No Rek</h4>
+							<div class="bank-number items">
+								<p class="mt-3 font-weight-bold">An. Edi Kurniawan</p>
+								<div class="item d-flex align-items-center my-3 row">
+									<div class="col-3 col-md-2 col-lg-4">
+										<img  src="{{ asset('assets/logo-bca.png') }}" alt="">
+									</div>
+									<p class="mb-0">1430-3267-39</p>
+								</div>
+								<div class="item d-flex align-items-center my-3 row">
+									<div class="col-3 col-md-2 col-lg-4">
+										<img src="{{ asset('assets/logo-bri.png') }}" alt="">
+									</div>
+									<p class="mb-0">6659-0102-1338-530</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>	
+			</footer>
     </div>
     @stack('js')
 </body>
