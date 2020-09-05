@@ -3,13 +3,14 @@
 @section('content')
 
   <div class="jumbotron jumbotron-fluid">
-    <div class="container h-100 d-flex align-items-center justify-content-between">
+    <div class="container h-100  d-flex align-items-center justify-content-between">
       <div class=" pr-md-5 text-white">
         <h1 class=" font-weight-bold display-4 mb-3">Lucky Art Tembaga</h1>
-        <p class="pr-5 lead text-break">Pusat kerajinan tembaga berkualitas Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquid quas consectetur non maiores nobis laboriosam deleniti error iusto temporibus hic.</p>
+        <p class="pr-5 lead text-break">Pusat ukir kerajinan tembaga berkualitas dan terpercaya. Memberikan pelayanan terbaik bagi pelanggan dan telah dipercaya oleh banyak konsumen.</p>
+        <a href="#" class="btn btn-primary product-cta px-5 font-weight-bold text-uppercase">See Our Product</a>
       </div>
       <div class="d-none d-md-block">
-        <img class="w-100" src="{{ asset('assets/image.png') }}" alt=""> 
+        <img  src="{{ asset('assets/image.png') }}" alt=""> 
       </div>
     </div>
   </div>
@@ -137,7 +138,8 @@
       <div class="row">
         <div class="desk col-12 px-5 d-block d-lg-none">
           <h1 class="title-section font-weight-bold">Testimonial</h1>
-          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Optio odit labore vel ullam laborum eos aspernatur cumque? Exercitationem eaque porro, sit facere id, quos voluptates possimus nulla ut quaerat assumenda odit voluptatum soluta saepe commodi eveniet. Magnam doloremque temporibus dolore provident repellendus eius atque. Quas quasi atque, molestias, odio in suscipit consequatur quam quod sit ipsa commodi corrupti? Rem, delectus!</p>
+          <p>Lucky Art Tembaga sangat menjaga kualitas dari produk kami, semua upaya kami maksimalkan untuk memenuhi kebutuhan dari konsumen. Kami senantiasa menjaga kepercayaan konsumen kepada kami, dengan memberikan pelayanan dan hasil yang terbaik.</p>
+          <p>Kepuasan pelanggan merupakan hadiah terindah bagi kami sehingga ini merupakan beberapa contoh pelanggan yang telah menikmati layanan kami.</p>
         </div>
         <div class="testimonial-image col-lg-5 col-12">
           <div id="carouselTestimonial" class="carousel slide mx-auto" data-ride="carousel">
@@ -166,7 +168,8 @@
         </div>
         <div class="desk col-lg-6 col-12 px-5 d-none d-lg-block">
           <h1 class="title-section">Testimonial</h1>
-          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Optio odit labore vel ullam laborum eos aspernatur cumque? Exercitationem eaque porro, sit facere id, quos voluptates possimus nulla ut quaerat assumenda odit voluptatum soluta saepe commodi eveniet. Magnam doloremque temporibus dolore provident repellendus eius atque. Quas quasi atque, molestias, odio in suscipit consequatur quam quod sit ipsa commodi corrupti? Rem, delectus!</p>
+          <p>Lucky Art Tembaga sangat menjaga kualitas dari produk kami, semua upaya kami maksimalkan untuk memenuhi kebutuhan dari konsumen. Kami senantiasa menjaga kepercayaan konsumen kepada kami, dengan memberikan pelayanan dan hasil yang terbaik.</p>
+          <p>Kepuasan pelanggan merupakan hadiah terindah bagi kami sehingga ini merupakan beberapa contoh pelanggan yang telah menikmati layanan kami.</p>
         </div>
       </div>
     </div>

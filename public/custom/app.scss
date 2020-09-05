@@ -28,6 +28,16 @@ main{
     img{
       width: 400px;
     }
+    a.product-cta{
+      background-color:#fff;
+      color: #227DC7;
+      // outline: 2px solid #fff;
+      &:hover{
+        background-color:#227DC7;
+        color: #fff;
+        outline: 2px solid #fff;
+      }
+    }
 
   }
   section.benefit-section{
@@ -114,5 +124,41 @@ section.detail-product-section{
     width: 300px;
     height: 400px;
     overflow: hidden;
+
+    .carousel-control-prev-icon,
+    .carousel-control-next-icon {
+      height: 100px;
+      width: 100px;
+      background-image: none;
+    }
+
+    .carousel-control-next-icon:after
+    {
+      content: '>';
+      background-color: #fff;
+      padding: 0 4px;
+      font-size: 55px;
+      color: red;
+    }
+
+    .carousel-control-prev-icon:after {
+      content: '<';
+      background-color: #fff;
+      padding: 0 4px;
+      font-size: 55px;
+      color: red;
+    }
+  }
+}
+
+.wa-me{
+  bottom: 0;
+  right: 0;
+  img{
+    width: 70px ;
+    height: 70px ;
+  }
+  &:hover{
+    opacity: 75%;
   }
 }

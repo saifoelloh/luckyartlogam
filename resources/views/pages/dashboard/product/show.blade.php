@@ -12,17 +12,13 @@
           <div class="col-12 col-md-5 col-lg-4">
             <div id="carouselExampleControls" class="carousel slide mx-auto mx-md-0 rounded-lg" data-interval="false" data-ride="carousel">
               <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img src="{{Storage::url($product->photo)}}" class="d-block w-100" alt="{{$product->description}}">
+                </div>
                 @foreach ($photos as $p)
-                  @if($loop->index == 0)
-                    <div class="carousel-item active">
-                       <img src="{{Storage::url($product->photo)}}" class="d-block w-100" alt="{{$product->description}}">
-                    </div>
-                  @else
-                    <div class="carousel-item">
-                      <img src="{{Storage::url($p['photo'])}}" class="d-block w-100" alt="{{$product->description}}">
-                    </div>
-                  @endif
-                  
+                  <div class="carousel-item">
+                    <img src="{{Storage::url($p['photo'])}}" class="d-block w-100" alt="{{$product->description}}">
+                  </div>
                 @endforeach
               </div>
               <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">

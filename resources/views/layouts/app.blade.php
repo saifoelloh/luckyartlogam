@@ -64,6 +64,11 @@
                 </div> 
             </div>
         </nav>
+				<div class="wa-me mb-3 mr-3 position-fixed">
+					<a href="https://wa.me/6281338391846">
+						<img src="{{ asset('assets/logo-wa.png') }}" alt="">	
+					</a>
+				</div>
 
         <main class="">
             @yield('content')
