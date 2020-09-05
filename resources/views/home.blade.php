@@ -5,8 +5,8 @@
   <div class="jumbotron jumbotron-fluid">
     <div class="container h-100 d-flex align-items-center justify-content-between">
       <div class=" pr-md-5 text-white">
-        <h1 class="display-4 mb-3">Lucky Art Logam</h1>
-        <p class="lead text-break">Pusat kerajinan Tembaga Berkualitas Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquid quas consectetur non maiores nobis laboriosam deleniti error iusto temporibus hic.</p>
+        <h1 class=" font-weight-bold display-4 mb-3">Lucky Art Tembaga</h1>
+        <p class="pr-5 lead text-break">Pusat kerajinan tembaga berkualitas Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquid quas consectetur non maiores nobis laboriosam deleniti error iusto temporibus hic.</p>
       </div>
       <div class="d-none d-lg-block">
         <img src="{{ asset('assets/image.png') }}" alt=""> 
@@ -41,13 +41,13 @@
   @endphp
   <section class="benefit-section vh-100-lg my-5">
     <div class="container">
-      <h1 class="title-section text-center">Benefits</h1>
+      <h1 class="title-section text-center font-weight-bold">Benefits</h1>
       <div class="row">
         @foreach ($benefits as $benefit)
           <div class="col-12 col-lg-6 my-3">
             <div class="card border-0 bg-transparent">
               <img src="{{ $benefit['icon'] }}" class="mx-auto" alt="...">
-              <div class="card-body text-center">
+              <div class="card-body text-center mt-2">
                 <h5 class="card-title">{{ $benefit['title'] }}</h5>
                 <p class="card-text">{{ $benefit['description'] }}</p>
               </div>
@@ -61,7 +61,7 @@
   <!-- Product -->
   <section id="productSection" class="product-section my-5">
     <div class="container">
-      <h1 class="title-section text-center">Product</h1>
+      <h1 class="title-section font-weight-bold text-center">Product</h1>
       <div class="row">
         @foreach ($items as $item)
           <div class="col-12 col-md-6 col-lg-4 mb-5">
@@ -69,7 +69,7 @@
               <img src="{{ Storage::url($item['photo']) }}" class="" alt="...">
               <div class="card-body">
                 <h6 class="card-title font-weight-bold mb-0 text-capitalize">{{ $item['name'] }}</h6>
-                <p class="product-category">
+                <p class="product-category mb-1">
                   {{ $item['category'] }}
                 </p>
                 <p class="card-text">{{ $item['description'] }}</p>
@@ -81,7 +81,7 @@
           </div>
         @endforeach
       </div>
-      <div class="d-flex justify-content-center">
+      <div class="d-flex justify-content-center mt">
         <a href="" class="btn btn-outline-primary font-weight-bold px-5">See More</a> 
       </div>
     </div>
@@ -132,11 +132,11 @@
       
     ];
   @endphp
-  <section class="testimonial-section my-5">
+  <section id="testimonialSection" class="testimonial-section my-5">
     <div class="container">
       <div class="row">
-        <div class="col-12 px-5 d-block d-lg-none">
-          <h1 class="title-section">Testimonial</h1>
+        <div class="desk col-12 px-5 d-block d-lg-none">
+          <h1 class="title-section font-weight-bold">Testimonial</h1>
           <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Optio odit labore vel ullam laborum eos aspernatur cumque? Exercitationem eaque porro, sit facere id, quos voluptates possimus nulla ut quaerat assumenda odit voluptatum soluta saepe commodi eveniet. Magnam doloremque temporibus dolore provident repellendus eius atque. Quas quasi atque, molestias, odio in suscipit consequatur quam quod sit ipsa commodi corrupti? Rem, delectus!</p>
         </div>
         <div class="testimonial-image col-lg-5 col-12">
@@ -164,7 +164,7 @@
             </a>
           </div>
         </div>
-        <div class="col-lg-6 col-12 px-5 d-none d-lg-block">
+        <div class="desk col-lg-6 col-12 px-5 d-none d-lg-block">
           <h1 class="title-section">Testimonial</h1>
           <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Optio odit labore vel ullam laborum eos aspernatur cumque? Exercitationem eaque porro, sit facere id, quos voluptates possimus nulla ut quaerat assumenda odit voluptatum soluta saepe commodi eveniet. Magnam doloremque temporibus dolore provident repellendus eius atque. Quas quasi atque, molestias, odio in suscipit consequatur quam quod sit ipsa commodi corrupti? Rem, delectus!</p>
         </div>

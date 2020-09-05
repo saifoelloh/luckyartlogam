@@ -49,15 +49,15 @@
                     <!-- Left Side Of Navbar -->
                     <ul class="navbar-nav ml-auto">
 											<li class="nav-item active">
-												<a class="nav-link" href="#">Home </a>
+												<a class="nav-link" href="{{ url('/') }}">Home </a>
 											</li>
 											<li class="nav-item">
-												<a class="nav-link" href="#">Product</a>
+												<a class="nav-link" href="{{ url('/') }}#productSection">Product</a>
 											</li>
 											<li class="nav-item">
-												<a class="nav-link" href="#">About</a>
+												<a class="nav-link" href="{{ url('/') }}#testimonialSection">Testimonial</a>
 											</li>
-											<button class="btn btn-primary">Contact Us</button>
+											<a href="#footerInfo" class="btn btn-primary">Contact Us</a>
                     </ul>
 
                     
@@ -69,7 +69,7 @@
             @yield('content')
 				</main>
 
-			<footer>
+			<footer id="footerInfo">
 				<div class="container">
 					<div class="row">
 						<div class="col-12 col-md-6 col-lg-4">
@@ -94,7 +94,7 @@
 							</div>
 									
 						</div>
-						<div class="col-12 col-md-6 col-lg-4">
+						<div class="col-12 col-md-6 col-lg-4 my-5 my-lg-0">
 							<h4 class="title bold">Social Media</h4>
 							<div class="items">
 								<a class="item d-flex align-items-center mt-3" href="https://www.instagram.com/lucky_art_tembaga/">

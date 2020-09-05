@@ -1,5 +1,6 @@
 body{
   overflow-x: hidden;
+  color: #1e272e;
 }
 nav{
   .navbar-brand{
@@ -9,7 +10,7 @@ nav{
   }
   .collapse{
     .navbar-nav{
-      li a, button{
+      li a, a{
         text-transform: uppercase;
         font-weight: 700;
         margin-right: 25px;
@@ -42,7 +43,8 @@ main{
         font-weight: bold;
       }
       p{
-        font-size: 15px;
+        font-size: 14px;
+        color: #485460;
       }
     }
   }
@@ -72,6 +74,12 @@ main{
     }
   }
   section.testimonial-section{
+    .desk{
+      p{
+        color: #485460;
+        font-size: 14px;
+      }
+    }
     .testimonial-image{
       #carouselTestimonial{
         width: 275px;

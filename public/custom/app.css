@@ -1,12 +1,13 @@
 body {
   overflow-x: hidden;
+  color: #1e272e;
 }
 
 nav .navbar-brand img {
   height: 40px;
 }
 
-nav .collapse .navbar-nav li a, nav .collapse .navbar-nav button {
+nav .collapse .navbar-nav li a, nav .collapse .navbar-nav a {
   text-transform: uppercase;
   font-weight: 700;
   margin-right: 25px;
@@ -36,7 +37,8 @@ main section.benefit-section .card-body h5 {
 }
 
 main section.benefit-section .card-body p {
-  font-size: 15px;
+  font-size: 14px;
+  color: #485460;
 }
 
 main section.product-section .card {
@@ -64,6 +66,11 @@ main section.product-section .card .card-body p.product-category {
 main section.product-section .card a {
   border-top-left-radius: 0;
   border-top-right-radius: 0;
+}
+
+main section.testimonial-section .desk p {
+  color: #485460;
+  font-size: 14px;
 }
 
 main section.testimonial-section .testimonial-image #carouselTestimonial {
