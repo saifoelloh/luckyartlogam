@@ -38,7 +38,7 @@
               <div class="card-body">
                 <h2 class="card-title text-capitalize mb-0">{{ $product->name }}</h2>
                 <h5 class="text-muted text-lowercase">{{ $product->category }}</h5>
-                <div class="card-text">{{ $product->description }}</div>
+                <div class="card-text"><?= $product->description ?></div>
               </div>
               <div class="card-footer bg-white border-0">
                 <a class="btn btn-success btn-block font-weight-bold" href="https://wa.me/6281338391846">

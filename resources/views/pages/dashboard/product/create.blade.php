@@ -56,15 +56,14 @@
 @stop
 
 @push('js')
-<script src="https://cdn.ckeditor.com/ckeditor5/22.0.0/classic/ckeditor.js"></script>
+<script src="//cdn.ckeditor.com/4.14.1/basic/ckeditor.js"></script>
 
 <script>
-  ClassicEditor
-    .create( document.querySelector( '#description' ) )
-    .catch( error => {
-        console.error( error );
-    });
+  const deskripsi = document.querySelector('#description')
+  CKEDITOR.replace(deskripsi, {
+    language: 'en-gb'
+  })
+  CKEDITOR.config.allowedContent = true
   
 </script>
-
 @endpush

@@ -80,7 +80,7 @@ class ProductController extends Controller
     {
         $product = Product::findOrFail($id);
 
-        return view('pages.dashboard.product.show', [
+        return view('pages.dashboard.product.detail', [
             'product' => $product,
             'photos' => $product->photos,
         ]);

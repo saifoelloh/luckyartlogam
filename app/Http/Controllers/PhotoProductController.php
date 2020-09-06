@@ -49,7 +49,7 @@ class PhotoProductController extends Controller
             ]);
 
             return redirect()
-              ->route('product.index')
+              ->route('product.show', $product->id)
               ->with([
                 'message' => 'Berhasil menambahkan foto produk',
                 'success' => true
@@ -72,7 +72,11 @@ class PhotoProductController extends Controller
      */
     public function show($id)
     {
-        //
+        $product = Product::findOrFail($id);
+        return view('pages.dashboard.product.show', [
+            'product' => $product,
+            'photos' => $product->photos
+        ]);
     }
 
     /**
@@ -108,7 +112,8 @@ class PhotoProductController extends Controller
     {
         try {
             $photo = PhotoProduct::findOrFail($id);
-            Storage::delete($photo);
+            Storage::delete($photo->photo);
+            $photo->delete();
 
             return redirect()
               ->route('product.index')
