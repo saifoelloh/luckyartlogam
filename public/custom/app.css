@@ -1,163 +1,139 @@
 body {
-    overflow-x: hidden;
-    color: #1e272e;
+  overflow-x: hidden;
+  color: #1e272e;
 }
 
 nav .navbar-brand img {
-    height: 40px;
+  height: 40px;
 }
 
-nav .collapse .navbar-nav li a,
-nav .collapse .navbar-nav a {
-    text-transform: uppercase;
-    font-weight: 700;
-    margin-right: 25px;
+nav .collapse .navbar-nav li a, nav .collapse .navbar-nav a {
+  text-transform: uppercase;
+  font-weight: 700;
+  margin-right: 25px;
 }
 
 main .jumbotron {
-    height: 90vh;
-    background-color: #0097e6;
+  height: 90vh;
+  background-color: #0097e6;
 }
 
 main .jumbotron img {
-    width: 400px;
+  width: 400px;
 }
 
 main .jumbotron a.product-cta {
-    background-color: #fff;
-    color: #227dc7;
+  background-color: #fff;
+  color: #227DC7;
 }
 
 main .jumbotron a.product-cta:hover {
-    background-color: #227dc7;
-    color: #fff;
-    outline: 2px solid #fff;
+  background-color: #227DC7;
+  color: #fff;
+  outline: 2px solid #fff;
 }
 
 main section.benefit-section img {
-    width: 125px;
-    height: 125px;
+  width: 125px;
+  height: 125px;
 }
 
 main section.benefit-section .card-body {
-    padding: 0 80px;
+  padding: 0 80px;
 }
 
 main section.benefit-section .card-body h5 {
-    font-size: 24px;
-    font-weight: bold;
+  font-size: 24px;
+  font-weight: bold;
 }
 
 main section.benefit-section .card-body p {
-    font-size: 14px;
-    color: #485460;
+  font-size: 14px;
+  color: #485460;
 }
 
 main section.product-section .card {
-    width: 300px;
-    height: 400px;
+  width: 300px;
+  height: 400px;
 }
 
 main section.product-section .card img {
-    height: 180px;
-    -o-object-fit: cover;
-    object-fit: cover;
-    -o-object-position: center;
-    object-position: center;
+  height: 180px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
 }
 
 main section.product-section .card .card-body h6.card-title {
-    font-size: 18px;
-    font-weight: bold;
+  font-size: 18px;
+  font-weight: bold;
 }
 
 main section.product-section .card .card-body p.product-category {
-    color: gray;
+  color: gray;
 }
 
 main section.product-section .card a {
-    border-top-left-radius: 0;
-    border-top-right-radius: 0;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
 }
 
 main section.testimonial-section .desk p {
-    color: #485460;
-    font-size: 14px;
+  color: #485460;
+  font-size: 14px;
 }
 
 main section.testimonial-section .testimonial-image #carouselTestimonial {
-    width: 275px;
+  width: 275px;
 }
 
 footer {
-    background-color: #2f3640;
-    color: #fff;
-    padding: 50px 0;
+  background-color: #2f3640;
+  color: #fff;
+  padding: 50px 0;
 }
 
 footer .items a.item {
-    text-decoration: none;
-    cursor: pointer;
-    color: #fff;
+  text-decoration: none;
+  cursor: pointer;
+  color: #fff;
 }
 
 footer .items a.item:hover {
-    color: #0097e6;
+  color: #0097e6;
 }
 
 footer .items.bank-number img {
-    height: 30px;
+  height: 30px;
 }
 
 section.detail-product-section #carouselExampleControls {
-    width: 300px;
-    height: 400px;
-    overflow: hidden;
+  width: 300px;
+  height: 400px;
+  overflow: hidden;
 }
 
-section.detail-product-section
-    #carouselExampleControls
-    .carousel-control-prev-icon,
-section.detail-product-section
-    #carouselExampleControls
-    .carousel-control-next-icon {
-    height: 100px;
-    width: 100px;
-    background-image: none;
+section.detail-product-section #carouselExampleControls .carousel-control-prev-icon,
+section.detail-product-section #carouselExampleControls .carousel-control-next-icon {
+  height: 100px;
+  width: 100px;
+  background-image: none;
 }
 
-section.detail-product-section
-    #carouselExampleControls
-    .carousel-control-next-icon:after {
-    content: ">";
-    background-color: #fff;
-    padding: 0 4px;
-    font-size: 55px;
-    color: red;
+section.detail-product-section #carouselExampleControls .carousel-control-next-icon:after {
+  content: '>';
+  background-color: #fff;
+  padding: 0 4px;
+  font-size: 55px;
+  color: red;
 }
 
-section.detail-product-section
-    #carouselExampleControls
-    .carousel-control-prev-icon:after {
-    content: "<";
-    background-color: #fff;
-    padding: 0 4px;
-    font-size: 55px;
-    color: red;
-}
-
-.wa-me {
-    bottom: 0;
-    right: 0;
-}
-
-.wa-me img {
-    width: 70px;
-    height: 70px;
-}
-
-.wa-me:hover {
-    opacity: 75%;
+section.detail-product-section #carouselExampleControls .carousel-control-prev-icon:after {
+  content: '<';
+  background-color: #fff;
+  padding: 0 4px;
+  font-size: 55px;
+  color: red;
 }
 /*# sourceMappingURL=app.css.map */
-

@@ -7,7 +7,6 @@
       <div class=" pr-md-5 text-white">
         <h1 class=" font-weight-bold display-4 mb-3">Lucky Art Tembaga</h1>
         <p class="pr-5 lead text-break">Pusat ukir kerajinan tembaga berkualitas dan terpercaya. Memberikan pelayanan terbaik bagi konsumen dan telah dipercaya oleh banyak konsumen dari berbagai kalangan di Indonesia.</p>
-        <a href="#" class="btn btn-primary product-cta px-5 font-weight-bold text-uppercase">See Our Product</a>
       </div>
       <div class="d-none d-md-block">
         <img  src="{{ asset('assets/image.png') }}" alt=""> 
