@@ -17,6 +17,7 @@ Route::get('/', 'HomeController@index');
 
 Auth::routes();
 Route::get('/product/{id}', 'PhotoProductController@show')->name('product.detail');
+Route::get('/products', 'PhotoProductController@index')->name('product.list');
 Route::group([
     'middleware'  => 'auth',
     'prefix'      => 'dashboard'

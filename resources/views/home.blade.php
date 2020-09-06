@@ -64,26 +64,30 @@
     <div class="container">
       <h1 class="title-section font-weight-bold text-center">Product</h1>
       <div class="row">
-        @foreach ($items as $item)
-          <div class="col-12 col-md-6 col-lg-4 mb-5">
-            <div class="card mx-auto">
-              <img src="{{ Storage::url($item['photo']) }}" class="" alt="...">
-              <div class="card-body">
-                <h6 class="card-title font-weight-bold mb-0 text-capitalize">{{ $item['name'] }}</h6>
-                <p class="product-category mb-1">
-                  {{ $item['category'] }}
-                </p>
-                <p class="card-text"><?= $item['description'] ?></p>
-              </div>
-              <div class="card-footer bg-white border-0 p-0">
-                <a href="{{route('product.detail', $item['id'])}}" class="btn btn-info btn-block text-white">Readmore</a>
+        @foreach ($items as $key => $item)
+          @if ($key < 6)
+            <div class="col-12 col-md-6 col-lg-4 mb-5">
+              <div class="card mx-auto">
+                <img src="{{ Storage::url($item['photo']) }}" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h6 class="card-title font-weight-bold mb-0 text-capitalize">{{ $item['name'] }}</h6>
+                  <p class="product-category mb-1">
+                    {{ $item['category'] }}
+                  </p>
+                  <p class="card-text"><?= $item['description'] ?></p>
+                </div>
+                <div class="card-footer bg-white border-0 p-0">
+                  <a href="{{route('product.detail', $item['id'])}}" class="btn btn-info btn-block text-white">Readmore</a>
+                </div>
               </div>
             </div>
-          </div>
+          @else
+            @break
+          @endif
         @endforeach
       </div>
       <div class="d-flex justify-content-center mt">
-        <a href="" class="btn btn-outline-primary font-weight-bold px-5">See More</a> 
+        <a href="{{route('product.list')}}" class="btn btn-outline-primary font-weight-bold px-5">See More</a> 
       </div>
     </div>
   </section>
