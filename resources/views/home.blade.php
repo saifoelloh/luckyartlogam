@@ -73,7 +73,7 @@
                 <p class="product-category mb-1">
                   {{ $item['category'] }}
                 </p>
-                <p class="card-text">{{ $item['description'] }}</p>
+                <p class="card-text"><?= $item['description'] ?></p>
               </div>
               <div class="card-footer bg-white border-0 p-0">
                 <a href="{{route('product.detail', $item['id'])}}" class="btn btn-info btn-block text-white">Readmore</a>

@@ -55,3 +55,16 @@
       </div>
     </div>
 @stop
+
+@push('js')
+<script src="//cdn.ckeditor.com/4.14.1/basic/ckeditor.js"></script>
+
+<script>
+  const deskripsi = document.querySelector('#description')
+  CKEDITOR.replace(deskripsi, {
+    language: 'en-gb'
+  })
+  CKEDITOR.config.allowedContent = true
+  
+</script>
+@endpush

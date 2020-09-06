@@ -16,7 +16,7 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', 'HomeController@index');
 
 Auth::routes();
-Route::get('/product/{id}', 'ProductController@show')->name('product.detail');
+Route::get('/product/{id}', 'PhotoProductController@show')->name('product.detail');
 Route::group([
     'middleware'  => 'auth',
     'prefix'      => 'dashboard'
