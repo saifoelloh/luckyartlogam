@@ -105,9 +105,9 @@
 									<i class="mr-4 fab fa-facebook fa-2x"></i>
 									<p class="mb-0">Lucky Art Tembaga</p>
 								</a>
-								<a class="item d-flex align-items-center mb-3">
+								<a class="item d-flex align-items-center mb-3" href="https://www.linkedin.com/in/lucky-art-300853136/" >
 									<i class="mr-4 fab fa-linkedin fa-2x"></i>
-									<p class="mb-0">edi-kurniawan</p>
+									<p class="mb-0">lucky-art-300853136</p>
 								</a>
 							</div>
 						</div>

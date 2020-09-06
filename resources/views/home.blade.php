@@ -67,7 +67,7 @@
           <div class="col-12 col-md-6 col-lg-4 mb-5">
             <div class="card mx-auto">
               <img src="{{ Storage::url($item['photo']) }}" class="" alt="...">
-              <div class="card-body">
+              <div class="card-body overflow-hidden">
                 <h6 class="card-title font-weight-bold mb-0 text-capitalize">{{ $item['name'] }}</h6>
                 <p class="product-category mb-1">
                   {{ $item['category'] }}
