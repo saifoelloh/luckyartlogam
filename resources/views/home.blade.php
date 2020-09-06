@@ -62,7 +62,7 @@
   <section id="productSection" class="product-section my-5">
     <div class="container">
       <h1 class="title-section font-weight-bold text-center">Product</h1>
-      <div class="row">
+      <div class="row mt-3">
         @foreach ($items as $key => $item)
           @if ($key < 6)
             <div class="col-12 col-md-6 col-lg-4 mb-5">
@@ -76,7 +76,7 @@
                   <p class="card-text"><?= $item['description'] ?></p>
                 </div>
                 <div class="card-footer bg-white border-0 p-0">
-                  <a href="{{route('product.detail', $item['id'])}}" class="btn btn-info btn-block text-white">Readmore</a>
+                  <a href="{{route('product.detail', $item['id'])}}" class="btn btn-info btn-block text-white">Detail Produk</a>
                 </div>
               </div>
             </div>
@@ -86,7 +86,7 @@
         @endforeach
       </div>
       <div class="d-flex justify-content-center mt">
-        <a href="{{route('product.list')}}" class="btn btn-outline-primary font-weight-bold px-5">See More</a> 
+        <a href="{{route('product.list')}}" class="btn btn-outline-primary font-weight-bold px-5">Lihat Daftar Produk</a> 
       </div>
     </div>
   </section>
@@ -145,15 +145,15 @@
           <p>Kepuasan pelanggan merupakan hadiah terindah bagi kami sehingga ini merupakan beberapa contoh pelanggan yang telah menikmati layanan kami.</p>
         </div>
         <div class="testimonial-image col-lg-5 col-12">
-          <div id="carouselTestimonial" class="carousel slide mx-auto" data-ride="carousel">
+          <div id="carouselTestimonial" class="carousel slide mx-auto" data-interval="false" data-ride="carousel">
             <div class="carousel-inner">
               @foreach($testimonials as $testi)
                 @if($testi['image'] == $testimonials[0]['image'])
-                  <div class="carousel-item active" data-interval="7000">
+                  <div class="carousel-item active" >
                     <img src="{{ asset('assets/testimoni/testi-01.jpg') }}" class="d-block w-100 " alt="...">
                   </div>
                 @else
-                  <div class="carousel-item" data-interval="3000">
+                  <div class="carousel-item">
                     <img src="{{ $testi['image'] }}" class="d-block w-100 " alt="...">
                   </div>
                 @endif
