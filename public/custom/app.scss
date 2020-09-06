@@ -96,6 +96,22 @@ main{
       }
     }
   }
+  section.about-section{
+    .desk{
+      p{
+        color: #485460;
+        font-size: 14px;
+      }
+    }
+    .logo-img{
+      @media screen and (max-width: 768px) {
+        padding-left: 75px;
+        padding-right: 75px;       
+      }
+
+      
+    }
+  }
 }
 
 footer{

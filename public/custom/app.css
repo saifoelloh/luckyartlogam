@@ -88,6 +88,18 @@ main section.testimonial-section .testimonial-image #carouselTestimonial {
   width: 275px;
 }
 
+main section.about-section .desk p {
+  color: #485460;
+  font-size: 14px;
+}
+
+@media screen and (max-width: 768px) {
+  main section.about-section .logo-img {
+    padding-left: 75px;
+    padding-right: 75px;
+  }
+}
+
 footer {
   background-color: #2f3640;
   color: #fff;

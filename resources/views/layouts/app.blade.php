@@ -57,6 +57,9 @@
 											<li class="nav-item">
 												<a class="nav-link" href="{{ url('/') }}#testimonialSection">Testimonial</a>
 											</li>
+											<li class="nav-item">
+												<a class="nav-link" href="{{ url('/') }}#aboutSection">Tentang Kami</a>
+											</li>
 											<a href="#footerInfo" class="btn btn-primary">Hubungi Kami</a>
                     </ul>
 

@@ -177,6 +177,26 @@
       </div>
     </div>
   </section>
+  <section id="aboutSection" class="about-section my-5">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 col-lg-6">
+          <h1 class="title-section font-weight-bold">Tentang Kami</h1>
+          <div class="desk">
+            <p>Kami Lucky Art Tembaga adalah home industri yang bergerak dibidang kerajinan tembaga dan kuningan.</p>
+            <p>Berbagai pilihan kami tawarkan baik untuk dalam ruangan maupun luar ruangan.Hiasan untuk rumah dan kantor seperti patung,vas bunga,ornamen dinding,hingga aneka lampu gantung,lampu stand dan lampu meja.Bathtub dan Wastafel untuk menambah nuansa elegan di kamar mandi juga bisa anda pilih.Sementara untuk luar ruangan,air mancur,relief,lampu taman hingga set meja kursi taman mungkin bisa anda pertimbangkan.</p>
+            <p>Tidak hanya itu,produk-produk untuk kebutuhan rumah ibadah seperti masjid juga kami sediakan seperti kubah masjid,pintu masjid,lampu gantung masjid,kaligrafi,hingga ornamen hiasan dinding.</p>
+            <p>Kami memberikan kemudahan dan keleluasaan kepada semua customer dengan tidak menerapkan minimum order.Artinya,anda tetap bisa mendapatkan produk kami berapapun jumlahnya.Dengan tetap memperhatikan kualitas produk yang kami hasilkan,kami berupaya memberikan hasil maksimal untuk setiap pesanan customer kami.</p>
+            <p>Untuk terus dapat menghasilkan kepercayaan dan memberikan karya yang terbaik, kami selalu belajar dan berinovasi mengikuti trend model dan permintaan yang selalu dinamis.</p>
+          </div>
+          
+        </div>
+        <div class="col-12 col-lg-6 logo-img">
+          <img src="{{ asset('assets/logo-luckyart.png') }}" class="mx-auto w-100" alt="">
+        </div>
+      </div>
+    </div>
+  </section>
 
 
 @endsection
