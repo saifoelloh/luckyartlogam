@@ -36,7 +36,7 @@
 								<a class="navbar-brand" href="{{ url('/') }}">
 								  <div class="d-flex align-items-center">
 										<img src="{{ asset('assets/logo-luckyart.png')}}" alt="">
-										<h4 class="ml-2 mb-0 font-weight-bolder">Lucky Art Tembaga</h4>
+										<h4 class="d-none d-md-inline-block ml-2 mb-0 font-weight-bolder">Lucky Art Tembaga</h4>
 									</div>
                 </a>
                <button class="navbar-toggler" type="button" data-toggle="collapse"
@@ -52,7 +52,7 @@
 												<a class="nav-link" href="{{ url('/') }}">Home </a>
 											</li>
 											<li class="nav-item">
-												<a class="nav-link" href="{{ url('/') }}#productSection">Product</a>
+												<a class="nav-link" href="{{ route('product.list') }}">Product</a>
 											</li>
 											<li class="nav-item">
 												<a class="nav-link" href="{{ url('/') }}#testimonialSection">Testimonial</a>
@@ -116,13 +116,13 @@
 							<div class="bank-number items">
 								<p class="mt-3 font-weight-bold">An. Edi Kurniawan</p>
 								<div class="item d-flex align-items-center my-3 row">
-									<div class="col-3 col-md-2 col-lg-4">
+									<div class="col-5 col-sm-3 col-md-2 col-lg-4">
 										<img  src="{{ asset('assets/logo-bca.png') }}" alt="">
 									</div>
 									<p class="mb-0">1430-3267-39</p>
 								</div>
 								<div class="item d-flex align-items-center my-3 row">
-									<div class="col-3 col-md-2 col-lg-4">
+									<div class="col-5 col-sm-3 col-md-2 col-lg-4">
 										<img src="{{ asset('assets/logo-bri.png') }}" alt="">
 									</div>
 									<p class="mb-0">6659-0102-1338-530</p>
