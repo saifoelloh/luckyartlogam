@@ -4,12 +4,16 @@
 @section('content_header')
     <div class="row">
       <div class="col">
-        <h1>Ubah Foto Produk</h1>
+        <h1>Foto Produk</h1>
       </div>
       <div class="col text-right">
+        <a class="btn btn-primary btn-sm mr-3" href="{{ route('photos.create', $product->id) }}">
+          <i class="fas fa-plus mr-2"></i>
+          Tambahkan Foto
+        </a>
         <a class="btn btn-primary btn-sm" href="{{ route('product.index') }}">
           <i class="fas fa-reply mr-2"></i>
-          kembali
+          Kembali
         </a>
       </div>
     </div>

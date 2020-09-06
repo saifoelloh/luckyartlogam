@@ -58,21 +58,21 @@
             sortable: false,
             render: function(data) {
               const photos = `
-                <a class="btn btn-success btn-sm" href="/dashboard/photos/${data}">
+                <a class="btn btn-success mb-2 btn-sm" href="/dashboard/photos/${data}">
                   <i class="fas fa-plus"></i>
                 </a>`
               const ubah = `
-                <a class="btn btn-info btn-sm" href="/dashboard/product/${data}">
+                <a class="btn btn-info mb-2 btn-sm" href="/dashboard/product/${data}">
                   <i class="fas fa-bars"></i>
                 </a>`
               const edit = `
-                <a class="btn btn-warning btn-sm text-white" href="{{ route("product.index") }}/${data}/edit">
+                <a class="btn btn-warning mb-2 btn-sm text-white" href="{{ route("product.index") }}/${data}/edit">
                   <i class="fas fa-edit"></i>
                 </a>`
               const destroy = `<form action="{{ route("product.index") }}/${data}" method="POST" class="d-inline">
                 @method("DELETE")
                 @csrf
-                <button class="btn btn-danger btn-sm" type="submit">
+                <button class="btn btn-danger mb-2 btn-sm" type="submit">
                   <i class="fas fa-trash"></i>
                 </button>
               </form>`
