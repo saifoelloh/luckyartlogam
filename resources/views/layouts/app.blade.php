@@ -57,7 +57,7 @@
 											<li class="nav-item">
 												<a class="nav-link" href="{{ url('/') }}#testimonialSection">Testimonial</a>
 											</li>
-											<a href="#footerInfo" class="btn btn-primary">Contact Us</a>
+											<a href="#footerInfo" class="btn btn-primary">Hubungi Kami</a>
                     </ul>
 
                     
