@@ -115,11 +115,12 @@ class PhotoProductController extends Controller
     {
         try {
             $photo = PhotoProduct::findOrFail($id);
+            $productId = $photo->product_id;
             Storage::delete($photo->photo);
             $photo->delete();
 
             return redirect()
-              ->route('product.index')
+              ->route('product.show', $productId)
               ->with([
                 'message' => 'Berhasil menghapus foto produk',
                 'success' => true

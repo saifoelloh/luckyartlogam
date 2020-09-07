@@ -15,7 +15,7 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', 'HomeController@index');
 
-Auth::routes();
+Auth::routes(['register' => false]);
 Route::get('/product/{id}', 'PhotoProductController@show')->name('product.detail');
 Route::get('/products', 'PhotoProductController@index')->name('product.list');
 Route::group([

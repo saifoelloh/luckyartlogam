@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\PhotoProduct;
 use App\Product;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Storage;
@@ -151,10 +152,24 @@ class ProductController extends Controller
      */
     public function destroy($id)
     {
+        $photos = PhotoProduct::where('product_id', $id)->get();
+        
         $product = Product::findOrFail($id);
-        if (Storage::delete($product->photo)) {
+        if($photos){
+          foreach($photos as $p){
+            Storage::delete($p->photo);
+            $p->delete();
+          }
+        }
+        Storage::delete($product->photo);
             try {
+              
+              // PhotoProduct::where('product_id', $id)->delete();
+              // Storage::where('product_id', $id)->delete();
+                // Storage::where($photos->photo)->delete();
+                // $photos->delete();
                 $product->delete();
+                // Storage::where('')
                 return redirect()
                   ->route('product.index')
                   ->with([
@@ -169,6 +184,6 @@ class ProductController extends Controller
                     'success' => false
                   ]);
             }
-        }
+        
     }
 }
