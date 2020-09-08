@@ -14,7 +14,7 @@ class AddYoutubeLinkColumnOnProductTable extends Migration
     public function up()
     {
         Schema::table('products', function (Blueprint $table) {
-            $table->text('yt_link');
+            $table->text('yt_link')->nullable();
         });
     }
 

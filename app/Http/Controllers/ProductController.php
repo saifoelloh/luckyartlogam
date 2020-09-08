@@ -45,6 +45,9 @@ class ProductController extends Controller
      */
     public function store(Request $request)
     {
+        // $request->validate([
+        //   'yt_link' => 'nullable'
+        // ]);
         $photo = $request->file('photo')->store('public');
         $yt_link = str_replace('https://youtu.be/', 'https://www.youtube.com/embed/',$request->yt_link );
 
@@ -116,6 +119,10 @@ class ProductController extends Controller
      */
     public function update(Request $request, $id)
     {
+        // $request->validate([
+        //   'yt_link' => 'nullable'
+        // ]);
+
         $product = Product::find($id);
         $photo = $product->photo;
         if ($request->file('photo')!=NULL) {
@@ -123,7 +130,7 @@ class ProductController extends Controller
             $photo = $request->file('photo')->store('public');
         }
         // check youtube link
-        if(strpos($request->yt_link,'https://youtu.be/' )){
+        if(strstr($request->yt_link,'https://youtu.be/')){
           $yt_link = str_replace('https://youtu.be/', 'https://www.youtube.com/embed/',$request->yt_link );
         }else{
           $yt_link = $request->yt_link;
