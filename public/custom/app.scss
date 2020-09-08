@@ -54,6 +54,9 @@ main{
       }
       p{
         font-size: 14px;
+        @media screen and (min-width: 768px) {
+          font-size: 16px;
+        }
         color: #485460;
       }
     }
@@ -88,6 +91,9 @@ main{
       p{
         color: #485460;
         font-size: 14px;
+        @media screen and (min-width: 768px) {
+          font-size: 15px;
+        }
       }
     }
     .testimonial-image{
@@ -99,8 +105,11 @@ main{
   section.about-section{
     .desk{
       p{
-        color: #485460;
         font-size: 14px;
+        color: #485460;
+        @media screen and (min-width: 768px) {
+          font-size: 15px;
+        }
       }
     }
     .logo-img{
@@ -154,6 +163,7 @@ section.detail-product-list-section{
         p.product-category{
           color: gray;
         }
+
       }
       a{
         border-top-left-radius: 0;
@@ -162,33 +172,13 @@ section.detail-product-list-section{
   }
 }
 section.detail-product-section{
-  #carouselExampleControls{
-    width: 300px;
-    height: 400px;
-    overflow: hidden;
-
-    .carousel-control-prev-icon,
-    .carousel-control-next-icon {
-      height: 100px;
-      width: 100px;
-      background-image: none;
-    }
-
-    .carousel-control-next-icon:after
-    {
-      content: '>';
-      background-color: #fff;
-      padding: 0 4px;
-      font-size: 55px;
-      color: red;
-    }
-
-    .carousel-control-prev-icon:after {
-      content: '<';
-      background-color: #fff;
-      padding: 0 4px;
-      font-size: 55px;
-      color: red;
-    }
-  }
+  .detail-product{
+    .card-text p{
+      font-size: 14px;
+      color: #2d3436;
+      @media screen and (min-width: 768px) {
+        font-size: 15px;
+      }
+   }
+ } 
 }

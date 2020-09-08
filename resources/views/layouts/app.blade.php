@@ -78,7 +78,7 @@
 						<div class="col-12 col-md-6 col-lg-4">
 							<h4 class="title bold">Hubungi Kami</h4>
 							<div class="items">
-								<a class="item d-flex align-items-center mt-3" href="tel:6281338391846">
+								<a class="item d-flex align-items-center mt-3" href="tel:+6281338391846">
 									<i class="mr-4 fas fa-mobile-alt fa-2x"></i>
 									<p class="mb-0">+62 813-3839-1846</p>
 								</a>

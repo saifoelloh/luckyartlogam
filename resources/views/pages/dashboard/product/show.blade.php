@@ -9,31 +9,12 @@
         <div class="row">
 
           <!-- Product Photos -->
-          <div class="col-12 col-md-5 col-lg-4">
-            <div id="carouselExampleControls" class="carousel slide mx-auto mx-md-0 rounded-lg" data-interval="false" data-ride="carousel">
-              <div class="carousel-inner">
-                <div class="carousel-item active">
-                  <img src="{{Storage::url($product->photo)}}" class="d-block w-100" alt="{{$product->description}}">
-                </div>
-                @foreach ($photos as $p)
-                  <div class="carousel-item">
-                    <img src="{{Storage::url($p['photo'])}}" class="d-block w-100" alt="{{$product->description}}">
-                  </div>
-                @endforeach
-              </div>
-              <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="sr-only">Previous</span>
-              </a>
-              <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="sr-only">Next</span>
-              </a>
-            </div>
+          <div class="col-12 col-md-6">
+            <img src="{{Storage::url($product->photo)}}" class="d-block w-100" alt="{{$product->description}}">
           </div>
 
           <!-- Detail Product -->
-          <div class="detail-product col-12 col-md-7 col-lg-8">
+          <div class="detail-product col-12 col-md-6">
             <div class="card h-100 border-0">
               <div class="card-body">
                 <h2 class="card-title text-capitalize mb-0">{{ $product->name }}</h2>
@@ -48,6 +29,16 @@
               </div>
             </div>
           </div>
+          <div class="list-photo-product col-12">
+            <h5 class="mt-5 mb-2 ml-3 font-weight-bold">Foto Lain</h5>
+            <div class="row">
+              @foreach($photos as $p) 
+                <div class="col-12 col-md-6 my-2 overflow-hidden">
+                    <img src="{{Storage::url($p['photo'])}}" class="rounded-lg d-block w-100" alt="{{$product->description}}">
+                </div> 
+              @endforeach
+            </div> 
+          </div>          
 
           <!-- Video Product -->
           @if($product->yt_link)
