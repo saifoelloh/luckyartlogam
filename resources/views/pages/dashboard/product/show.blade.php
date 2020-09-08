@@ -50,6 +50,7 @@
           </div>
 
           <!-- Video Product -->
+          @if($product->yt_link)
           <div class="video-product col-12 px-5 mt-5">
             <div class="mb-2">
               <h5 class="mb-1">Video Dokumentasi</h5>
@@ -60,6 +61,7 @@
             </iframe> 
             </div>
           </div>
+          @endif
 
         </div>
       </div>

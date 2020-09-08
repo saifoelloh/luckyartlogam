@@ -46,6 +46,7 @@ class ProductController extends Controller
     public function store(Request $request)
     {
         $photo = $request->file('photo')->store('public');
+        $yt_link = str_replace('https://youtu.be/', 'https://www.youtube.com/embed/',$request->yt_link );
 
         try {
             Product::create([
@@ -53,6 +54,7 @@ class ProductController extends Controller
                 'category' => $request->category,
                 'description' => $request->description,
                 'photo' => $photo,
+                'yt_link' => $yt_link,
             ]);
 
             return redirect()
@@ -120,6 +122,12 @@ class ProductController extends Controller
             Storage::delete($photo);
             $photo = $request->file('photo')->store('public');
         }
+        // check youtube link
+        if(strpos($request->yt_link,'https://youtu.be/' )){
+          $yt_link = str_replace('https://youtu.be/', 'https://www.youtube.com/embed/',$request->yt_link );
+        }else{
+          $yt_link = $request->yt_link;
+        }
 
         try {
             $product->update([
@@ -127,6 +135,7 @@ class ProductController extends Controller
                 'category' => $request->category,
                 'description' => $request->description,
                 'photo' => $photo,
+                'yt_link' => $yt_link,
             ]);
             return redirect()
               ->route('product.index')

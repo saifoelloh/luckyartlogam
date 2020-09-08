@@ -10,14 +10,12 @@ class Product extends Model
         'name',
         'category',
         'description',
-        'photo'
+        'photo',
+        'yt_link',
     ];
 
     public function photos() {
       return $this->hasMany(PhotoProduct::class);
     }
 
-    public function video() {
-      return $this->hasOne(ProductVideo::class);
-    }
 }
