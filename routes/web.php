@@ -27,4 +27,5 @@ Route::group([
     Route::get('/photos/{id}', 'PhotoProductController@create')->name('photos.create');
     Route::post('/photos/{id}', 'PhotoProductController@store')->name('photos.store');
     Route::delete('/photos/{id}', 'PhotoProductController@destroy')->name('photos.destroy');
+    Route::resource('video', 'ProductVideoController');
 });

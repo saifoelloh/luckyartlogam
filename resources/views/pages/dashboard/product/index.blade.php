@@ -65,6 +65,10 @@
                 <a class="btn btn-info mb-2 btn-sm" href="/dashboard/product/${data}">
                   <i class="fas fa-bars"></i>
                 </a>`
+              const video = `
+                <a class="btn btn-success mb-2 btn-sm" href="/dashboard/video/${data}">
+                  <i class="fas fa-video"></i>
+                </a>`
               const edit = `
                 <a class="btn btn-warning mb-2 btn-sm text-white" href="{{ route("product.index") }}/${data}/edit">
                   <i class="fas fa-edit"></i>
@@ -80,6 +84,7 @@
                 <div class="d-inline">
                   ${photos}
                   ${ubah}
+                  ${video}
                   ${edit}
                   ${destroy}
                 </div>
