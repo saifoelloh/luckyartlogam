@@ -49,6 +49,20 @@
             </div>
           </div>
 
+          <!-- Video Product -->
+          @if($product->yt_link)
+          <div class="video-product col-12 px-5 mt-5">
+            <div class="mb-2">
+              <h5 class="mb-1">Video Dokumentasi</h5>
+            </div>
+            <div class="card w-100 border-0">
+             <iframe width="560" height="315" class="w-100"  src="{{$product->yt_link}}" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+            
+            </iframe> 
+            </div>
+          </div>
+          @endif
+
         </div>
       </div>
     </div>

@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\PhotoProduct;
 use App\Product;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Storage;
@@ -44,7 +45,11 @@ class ProductController extends Controller
      */
     public function store(Request $request)
     {
+        // $request->validate([
+        //   'yt_link' => 'nullable'
+        // ]);
         $photo = $request->file('photo')->store('public');
+        $yt_link = str_replace('https://youtu.be/', 'https://www.youtube.com/embed/',$request->yt_link );
 
         try {
             Product::create([
@@ -52,6 +57,7 @@ class ProductController extends Controller
                 'category' => $request->category,
                 'description' => $request->description,
                 'photo' => $photo,
+                'yt_link' => $yt_link,
             ]);
 
             return redirect()
@@ -113,11 +119,21 @@ class ProductController extends Controller
      */
     public function update(Request $request, $id)
     {
+        // $request->validate([
+        //   'yt_link' => 'nullable'
+        // ]);
+
         $product = Product::find($id);
         $photo = $product->photo;
         if ($request->file('photo')!=NULL) {
             Storage::delete($photo);
             $photo = $request->file('photo')->store('public');
+        }
+        // check youtube link
+        if(strstr($request->yt_link,'https://youtu.be/')){
+          $yt_link = str_replace('https://youtu.be/', 'https://www.youtube.com/embed/',$request->yt_link );
+        }else{
+          $yt_link = $request->yt_link;
         }
 
         try {
@@ -126,6 +142,7 @@ class ProductController extends Controller
                 'category' => $request->category,
                 'description' => $request->description,
                 'photo' => $photo,
+                'yt_link' => $yt_link,
             ]);
             return redirect()
               ->route('product.index')
@@ -151,10 +168,24 @@ class ProductController extends Controller
      */
     public function destroy($id)
     {
+        $photos = PhotoProduct::where('product_id', $id)->get();
+        
         $product = Product::findOrFail($id);
-        if (Storage::delete($product->photo)) {
+        if($photos){
+          foreach($photos as $p){
+            Storage::delete($p->photo);
+            $p->delete();
+          }
+        }
+        Storage::delete($product->photo);
             try {
+              
+              // PhotoProduct::where('product_id', $id)->delete();
+              // Storage::where('product_id', $id)->delete();
+                // Storage::where($photos->photo)->delete();
+                // $photos->delete();
                 $product->delete();
+                // Storage::where('')
                 return redirect()
                   ->route('product.index')
                   ->with([
@@ -169,6 +200,6 @@ class ProductController extends Controller
                     'success' => false
                   ]);
             }
-        }
+        
     }
 }

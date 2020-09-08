@@ -39,6 +39,10 @@
                 <label for="description">Deskripsi</label>
                 <textarea id="description" class="form-control" name="description" required>{{$product['description']}}</textarea>
               </div>
+              <div class="form-group">
+                <label for="description">Link Youtube</label>
+                <input class="form-control" type="text" name="yt_link" id="yt_link" value="{{ $product['yt_link'] }}">
+              </div>
               <div class="button-group">
                 <button class="btn btn-success btn-block" type="submit">
                   <i class="fas fa-paper-plane mr-2"></i>

@@ -6,8 +6,7 @@
     <div class="container h-100  d-flex align-items-center justify-content-between">
       <div class=" pr-md-5 text-white">
         <h1 class=" font-weight-bold display-4 mb-3">Lucky Art Tembaga</h1>
-        <p class="pr-5 lead text-break">Pusat ukir kerajinan tembaga berkualitas dan terpercaya. Memberikan pelayanan terbaik bagi pelanggan dan telah dipercaya oleh banyak konsumen.</p>
-        <a href="#" class="btn btn-primary product-cta px-5 font-weight-bold text-uppercase">See Our Product</a>
+        <p class="pr-5 lead text-break">Pusat ukir kerajinan tembaga berkualitas dan terpercaya. Memberikan pelayanan terbaik bagi konsumen dan telah dipercaya oleh banyak konsumen dari berbagai kalangan di Indonesia.</p>
       </div>
       <div class="d-none d-md-block">
         <img  src="{{ asset('assets/image.png') }}" alt=""> 
@@ -63,13 +62,13 @@
   <section id="productSection" class="product-section my-5">
     <div class="container">
       <h1 class="title-section font-weight-bold text-center">Product</h1>
-      <div class="row">
+      <div class="row mt-3">
         @foreach ($items as $key => $item)
           @if ($key < 6)
             <div class="col-12 col-md-6 col-lg-4 mb-5">
               <div class="card mx-auto">
                 <img src="{{ Storage::url($item['photo']) }}" class="card-img-top" alt="...">
-                <div class="card-body">
+                <div class="card-body overflow-hidden">
                   <h6 class="card-title font-weight-bold mb-0 text-capitalize">{{ $item['name'] }}</h6>
                   <p class="product-category mb-1">
                     {{ $item['category'] }}
@@ -77,7 +76,7 @@
                   <p class="card-text"><?= $item['description'] ?></p>
                 </div>
                 <div class="card-footer bg-white border-0 p-0">
-                  <a href="{{route('product.detail', $item['id'])}}" class="btn btn-info btn-block text-white">Readmore</a>
+                  <a href="{{route('product.detail', $item['id'])}}" class="btn btn-info btn-block text-white">Detail Produk</a>
                 </div>
               </div>
             </div>
@@ -87,7 +86,7 @@
         @endforeach
       </div>
       <div class="d-flex justify-content-center mt">
-        <a href="{{route('product.list')}}" class="btn btn-outline-primary font-weight-bold px-5">See More</a> 
+        <a href="{{route('product.list')}}" class="btn btn-outline-primary font-weight-bold px-5">Lihat Daftar Produk</a> 
       </div>
     </div>
   </section>
@@ -146,15 +145,15 @@
           <p>Kepuasan pelanggan merupakan hadiah terindah bagi kami sehingga ini merupakan beberapa contoh pelanggan yang telah menikmati layanan kami.</p>
         </div>
         <div class="testimonial-image col-lg-5 col-12">
-          <div id="carouselTestimonial" class="carousel slide mx-auto" data-ride="carousel">
+          <div id="carouselTestimonial" class="carousel slide mx-auto" data-interval="false" data-ride="carousel">
             <div class="carousel-inner">
               @foreach($testimonials as $testi)
                 @if($testi['image'] == $testimonials[0]['image'])
-                  <div class="carousel-item active" data-interval="7000">
+                  <div class="carousel-item active" >
                     <img src="{{ asset('assets/testimoni/testi-01.jpg') }}" class="d-block w-100 " alt="...">
                   </div>
                 @else
-                  <div class="carousel-item" data-interval="3000">
+                  <div class="carousel-item">
                     <img src="{{ $testi['image'] }}" class="d-block w-100 " alt="...">
                   </div>
                 @endif
@@ -174,6 +173,26 @@
           <h1 class="title-section">Testimonial</h1>
           <p>Lucky Art Tembaga sangat menjaga kualitas dari produk kami, semua upaya kami maksimalkan untuk memenuhi kebutuhan dari konsumen. Kami senantiasa menjaga kepercayaan konsumen kepada kami, dengan memberikan pelayanan dan hasil yang terbaik.</p>
           <p>Kepuasan pelanggan merupakan hadiah terindah bagi kami sehingga ini merupakan beberapa contoh pelanggan yang telah menikmati layanan kami.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="aboutSection" class="about-section my-5">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 col-lg-6">
+          <h1 class="title-section font-weight-bold">Tentang Kami</h1>
+          <div class="desk">
+            <p>Kami Lucky Art Tembaga adalah home industri yang bergerak dibidang kerajinan tembaga dan kuningan.</p>
+            <p>Berbagai pilihan kami tawarkan baik untuk dalam ruangan maupun luar ruangan.Hiasan untuk rumah dan kantor seperti patung,vas bunga,ornamen dinding,hingga aneka lampu gantung,lampu stand dan lampu meja.Bathtub dan Wastafel untuk menambah nuansa elegan di kamar mandi juga bisa anda pilih.Sementara untuk luar ruangan,air mancur,relief,lampu taman hingga set meja kursi taman mungkin bisa anda pertimbangkan.</p>
+            <p>Tidak hanya itu,produk-produk untuk kebutuhan rumah ibadah seperti masjid juga kami sediakan seperti kubah masjid,pintu masjid,lampu gantung masjid,kaligrafi,hingga ornamen hiasan dinding.</p>
+            <p>Kami memberikan kemudahan dan keleluasaan kepada semua customer dengan tidak menerapkan minimum order.Artinya,anda tetap bisa mendapatkan produk kami berapapun jumlahnya.Dengan tetap memperhatikan kualitas produk yang kami hasilkan,kami berupaya memberikan hasil maksimal untuk setiap pesanan customer kami.</p>
+            <p>Untuk terus dapat menghasilkan kepercayaan dan memberikan karya yang terbaik, kami selalu belajar dan berinovasi mengikuti trend model dan permintaan yang selalu dinamis.</p>
+          </div>
+          
+        </div>
+        <div class="col-12 col-lg-6 logo-img">
+          <img src="{{ asset('assets/logo-luckyart.png') }}" class="mx-auto w-100" alt="">
         </div>
       </div>
     </div>
