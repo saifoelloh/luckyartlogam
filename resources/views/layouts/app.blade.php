@@ -8,7 +8,11 @@
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
-    <title>{{ config('app.name', 'Lucky Art Tembaga') }}</title>
+    <title>{{ config('app.name', 'Lucky Art Logam') }}</title>
+
+
+    <link rel="icon" href="{{ asset('favicons/favicon.ico') }}"/>
+    <link rel="manifest" href="/manifest.json">
 
     <!-- Scripts -->
     <script src="{{ asset('js/app.js') }}" defer></script>
